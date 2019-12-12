@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_Personal_BMI_Index_Personal_BMI_IndexUITests : NSObject
+@end
+@implementation PodsDummy_Pods_Personal_BMI_Index_Personal_BMI_IndexUITests
+@end

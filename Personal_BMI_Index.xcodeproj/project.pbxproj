@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,8 @@
 		B616F95023A1B7AB0004D41B /* Personal_BMI_IndexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B616F94F23A1B7AB0004D41B /* Personal_BMI_IndexTests.swift */; };
 		B616F95B23A1B7AB0004D41B /* Personal_BMI_IndexUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B616F95A23A1B7AB0004D41B /* Personal_BMI_IndexUITests.swift */; };
 		B616F96923A1BEEF0004D41B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B616F96823A1BEEF0004D41B /* GoogleService-Info.plist */; };
+		B616F96B23A1DA6B0004D41B /* TableViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B616F96A23A1DA6B0004D41B /* TableViewControllerTableViewCell.swift */; };
+		B616F96D23A1E4060004D41B /* AvatarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B616F96C23A1E4060004D41B /* AvatarModel.swift */; };
 		D7E9723B3797D16B1C828352 /* Pods_Personal_BMI_IndexTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F7A146FA4D799E1B489DBDF /* Pods_Personal_BMI_IndexTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +66,8 @@
 		B616F95A23A1B7AB0004D41B /* Personal_BMI_IndexUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personal_BMI_IndexUITests.swift; sourceTree = "<group>"; };
 		B616F95C23A1B7AB0004D41B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B616F96823A1BEEF0004D41B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B616F96A23A1DA6B0004D41B /* TableViewControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerTableViewCell.swift; sourceTree = "<group>"; };
+		B616F96C23A1E4060004D41B /* AvatarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarModel.swift; sourceTree = "<group>"; };
 		F1042ADA68639DBDCC1D4EAD /* Pods-Personal_BMI_IndexTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Personal_BMI_IndexTests.debug.xcconfig"; path = "Target Support Files/Pods-Personal_BMI_IndexTests/Pods-Personal_BMI_IndexTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F28B982B313CFEFFF53A3CE5 /* Pods-Personal_BMI_IndexTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Personal_BMI_IndexTests.release.xcconfig"; path = "Target Support Files/Pods-Personal_BMI_IndexTests/Pods-Personal_BMI_IndexTests.release.xcconfig"; sourceTree = "<group>"; };
 		FCC21EEE4B0023F89A6FEBAE /* Pods-Personal_BMI_Index.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Personal_BMI_Index.release.xcconfig"; path = "Target Support Files/Pods-Personal_BMI_Index/Pods-Personal_BMI_Index.release.xcconfig"; sourceTree = "<group>"; };
@@ -107,7 +111,6 @@
 				F1042ADA68639DBDCC1D4EAD /* Pods-Personal_BMI_IndexTests.debug.xcconfig */,
 				F28B982B313CFEFFF53A3CE5 /* Pods-Personal_BMI_IndexTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -146,6 +149,8 @@
 				B616F94623A1B7AB0004D41B /* Info.plist */,
 				B616F96823A1BEEF0004D41B /* GoogleService-Info.plist */,
 				B616F93E23A1B7AA0004D41B /* Personal_BMI_Index.xcdatamodeld */,
+				B616F96A23A1DA6B0004D41B /* TableViewControllerTableViewCell.swift */,
+				B616F96C23A1E4060004D41B /* AvatarModel.swift */,
 			);
 			path = Personal_BMI_Index;
 			sourceTree = "<group>";
@@ -421,6 +426,8 @@
 				B616F94023A1B7AA0004D41B /* Personal_BMI_Index.xcdatamodeld in Sources */,
 				B616F93A23A1B7AA0004D41B /* SecondViewController.swift in Sources */,
 				B616F93823A1B7AA0004D41B /* FirstViewController.swift in Sources */,
+				B616F96D23A1E4060004D41B /* AvatarModel.swift in Sources */,
+				B616F96B23A1DA6B0004D41B /* TableViewControllerTableViewCell.swift in Sources */,
 				B616F93423A1B7AA0004D41B /* AppDelegate.swift in Sources */,
 				B616F93623A1B7AA0004D41B /* SceneDelegate.swift in Sources */,
 			);
