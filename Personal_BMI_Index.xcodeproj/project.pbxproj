@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15C2F5C78C9CA24AC3B06D2E /* Pods_Personal_BMI_Index_Personal_BMI_IndexUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CB46FE9B59E2399CF3FCD5 /* Pods_Personal_BMI_Index_Personal_BMI_IndexUITests.framework */; };
+		AEEFA47B191ACBC6434DF995 /* Pods_Personal_BMI_Index.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C7AFE20D0C010979EE206A /* Pods_Personal_BMI_Index.framework */; };
 		B616F93423A1B7AA0004D41B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B616F93323A1B7AA0004D41B /* AppDelegate.swift */; };
 		B616F93623A1B7AA0004D41B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B616F93523A1B7AA0004D41B /* SceneDelegate.swift */; };
 		B616F93823A1B7AA0004D41B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B616F93723A1B7AA0004D41B /* FirstViewController.swift */; };
@@ -17,6 +19,8 @@
 		B616F94523A1B7AB0004D41B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B616F94323A1B7AB0004D41B /* LaunchScreen.storyboard */; };
 		B616F95023A1B7AB0004D41B /* Personal_BMI_IndexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B616F94F23A1B7AB0004D41B /* Personal_BMI_IndexTests.swift */; };
 		B616F95B23A1B7AB0004D41B /* Personal_BMI_IndexUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B616F95A23A1B7AB0004D41B /* Personal_BMI_IndexUITests.swift */; };
+		B616F96923A1BEEF0004D41B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B616F96823A1BEEF0004D41B /* GoogleService-Info.plist */; };
+		D7E9723B3797D16B1C828352 /* Pods_Personal_BMI_IndexTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F7A146FA4D799E1B489DBDF /* Pods_Personal_BMI_IndexTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A4BF79D265740916D972C51 /* Pods-Personal_BMI_Index-Personal_BMI_IndexUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Personal_BMI_Index-Personal_BMI_IndexUITests.debug.xcconfig"; path = "Target Support Files/Pods-Personal_BMI_Index-Personal_BMI_IndexUITests/Pods-Personal_BMI_Index-Personal_BMI_IndexUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		35CB46FE9B59E2399CF3FCD5 /* Pods_Personal_BMI_Index_Personal_BMI_IndexUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Personal_BMI_Index_Personal_BMI_IndexUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		397CB25396B66454590DD705 /* Pods-Personal_BMI_Index.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Personal_BMI_Index.debug.xcconfig"; path = "Target Support Files/Pods-Personal_BMI_Index/Pods-Personal_BMI_Index.debug.xcconfig"; sourceTree = "<group>"; };
+		7ADDE8A606ACAD5FE36576D1 /* Pods-Personal_BMI_Index-Personal_BMI_IndexUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Personal_BMI_Index-Personal_BMI_IndexUITests.release.xcconfig"; path = "Target Support Files/Pods-Personal_BMI_Index-Personal_BMI_IndexUITests/Pods-Personal_BMI_Index-Personal_BMI_IndexUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8F7A146FA4D799E1B489DBDF /* Pods_Personal_BMI_IndexTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Personal_BMI_IndexTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99C7AFE20D0C010979EE206A /* Pods_Personal_BMI_Index.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Personal_BMI_Index.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B616F93023A1B7AA0004D41B /* Personal_BMI_Index.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Personal_BMI_Index.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B616F93323A1B7AA0004D41B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B616F93523A1B7AA0004D41B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +63,10 @@
 		B616F95623A1B7AB0004D41B /* Personal_BMI_IndexUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Personal_BMI_IndexUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B616F95A23A1B7AB0004D41B /* Personal_BMI_IndexUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personal_BMI_IndexUITests.swift; sourceTree = "<group>"; };
 		B616F95C23A1B7AB0004D41B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B616F96823A1BEEF0004D41B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F1042ADA68639DBDCC1D4EAD /* Pods-Personal_BMI_IndexTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Personal_BMI_IndexTests.debug.xcconfig"; path = "Target Support Files/Pods-Personal_BMI_IndexTests/Pods-Personal_BMI_IndexTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F28B982B313CFEFFF53A3CE5 /* Pods-Personal_BMI_IndexTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Personal_BMI_IndexTests.release.xcconfig"; path = "Target Support Files/Pods-Personal_BMI_IndexTests/Pods-Personal_BMI_IndexTests.release.xcconfig"; sourceTree = "<group>"; };
+		FCC21EEE4B0023F89A6FEBAE /* Pods-Personal_BMI_Index.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Personal_BMI_Index.release.xcconfig"; path = "Target Support Files/Pods-Personal_BMI_Index/Pods-Personal_BMI_Index.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEEFA47B191ACBC6434DF995 /* Pods_Personal_BMI_Index.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7E9723B3797D16B1C828352 /* Pods_Personal_BMI_IndexTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +90,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15C2F5C78C9CA24AC3B06D2E /* Pods_Personal_BMI_Index_Personal_BMI_IndexUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		801EC83A3BE918F647D60336 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				397CB25396B66454590DD705 /* Pods-Personal_BMI_Index.debug.xcconfig */,
+				FCC21EEE4B0023F89A6FEBAE /* Pods-Personal_BMI_Index.release.xcconfig */,
+				0A4BF79D265740916D972C51 /* Pods-Personal_BMI_Index-Personal_BMI_IndexUITests.debug.xcconfig */,
+				7ADDE8A606ACAD5FE36576D1 /* Pods-Personal_BMI_Index-Personal_BMI_IndexUITests.release.xcconfig */,
+				F1042ADA68639DBDCC1D4EAD /* Pods-Personal_BMI_IndexTests.debug.xcconfig */,
+				F28B982B313CFEFFF53A3CE5 /* Pods-Personal_BMI_IndexTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B616F92723A1B7AA0004D41B = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +118,8 @@
 				B616F94E23A1B7AB0004D41B /* Personal_BMI_IndexTests */,
 				B616F95923A1B7AB0004D41B /* Personal_BMI_IndexUITests */,
 				B616F93123A1B7AA0004D41B /* Products */,
+				801EC83A3BE918F647D60336 /* Pods */,
+				FBC37CAC9CB42E83056FAA29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +144,7 @@
 				B616F94123A1B7AB0004D41B /* Assets.xcassets */,
 				B616F94323A1B7AB0004D41B /* LaunchScreen.storyboard */,
 				B616F94623A1B7AB0004D41B /* Info.plist */,
+				B616F96823A1BEEF0004D41B /* GoogleService-Info.plist */,
 				B616F93E23A1B7AA0004D41B /* Personal_BMI_Index.xcdatamodeld */,
 			);
 			path = Personal_BMI_Index;
@@ -134,6 +168,16 @@
 			path = Personal_BMI_IndexUITests;
 			sourceTree = "<group>";
 		};
+		FBC37CAC9CB42E83056FAA29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99C7AFE20D0C010979EE206A /* Pods_Personal_BMI_Index.framework */,
+				35CB46FE9B59E2399CF3FCD5 /* Pods_Personal_BMI_Index_Personal_BMI_IndexUITests.framework */,
+				8F7A146FA4D799E1B489DBDF /* Pods_Personal_BMI_IndexTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,9 +185,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B616F95F23A1B7AB0004D41B /* Build configuration list for PBXNativeTarget "Personal_BMI_Index" */;
 			buildPhases = (
+				C5C40B35A901C53E3BA93FCE /* [CP] Check Pods Manifest.lock */,
 				B616F92C23A1B7AA0004D41B /* Sources */,
 				B616F92D23A1B7AA0004D41B /* Frameworks */,
 				B616F92E23A1B7AA0004D41B /* Resources */,
+				8144D910674761C0E815143E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,6 +204,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B616F96223A1B7AB0004D41B /* Build configuration list for PBXNativeTarget "Personal_BMI_IndexTests" */;
 			buildPhases = (
+				1958CD8ABD19921649C0839F /* [CP] Check Pods Manifest.lock */,
 				B616F94723A1B7AB0004D41B /* Sources */,
 				B616F94823A1B7AB0004D41B /* Frameworks */,
 				B616F94923A1B7AB0004D41B /* Resources */,
@@ -176,9 +223,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B616F96523A1B7AB0004D41B /* Build configuration list for PBXNativeTarget "Personal_BMI_IndexUITests" */;
 			buildPhases = (
+				293E47CCF23676647D32F4C4 /* [CP] Check Pods Manifest.lock */,
 				B616F95223A1B7AB0004D41B /* Sources */,
 				B616F95323A1B7AB0004D41B /* Frameworks */,
 				B616F95423A1B7AB0004D41B /* Resources */,
+				678495FD4D047A758A9963A1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -241,6 +290,7 @@
 				B616F94523A1B7AB0004D41B /* LaunchScreen.storyboard in Resources */,
 				B616F94223A1B7AB0004D41B /* Assets.xcassets in Resources */,
 				B616F93D23A1B7AA0004D41B /* Main.storyboard in Resources */,
+				B616F96923A1BEEF0004D41B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +309,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1958CD8ABD19921649C0839F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Personal_BMI_IndexTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		293E47CCF23676647D32F4C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Personal_BMI_Index-Personal_BMI_IndexUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		678495FD4D047A758A9963A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Personal_BMI_Index-Personal_BMI_IndexUITests/Pods-Personal_BMI_Index-Personal_BMI_IndexUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Personal_BMI_Index-Personal_BMI_IndexUITests/Pods-Personal_BMI_Index-Personal_BMI_IndexUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Personal_BMI_Index-Personal_BMI_IndexUITests/Pods-Personal_BMI_Index-Personal_BMI_IndexUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8144D910674761C0E815143E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Personal_BMI_Index/Pods-Personal_BMI_Index-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Personal_BMI_Index/Pods-Personal_BMI_Index-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Personal_BMI_Index/Pods-Personal_BMI_Index-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5C40B35A901C53E3BA93FCE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Personal_BMI_Index-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B616F92C23A1B7AA0004D41B /* Sources */ = {
@@ -440,6 +593,7 @@
 		};
 		B616F96023A1B7AB0004D41B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 397CB25396B66454590DD705 /* Pods-Personal_BMI_Index.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -458,6 +612,7 @@
 		};
 		B616F96123A1B7AB0004D41B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCC21EEE4B0023F89A6FEBAE /* Pods-Personal_BMI_Index.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -476,6 +631,7 @@
 		};
 		B616F96323A1B7AB0004D41B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1042ADA68639DBDCC1D4EAD /* Pods-Personal_BMI_IndexTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -498,6 +654,7 @@
 		};
 		B616F96423A1B7AB0004D41B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F28B982B313CFEFFF53A3CE5 /* Pods-Personal_BMI_IndexTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -520,6 +677,7 @@
 		};
 		B616F96623A1B7AB0004D41B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A4BF79D265740916D972C51 /* Pods-Personal_BMI_Index-Personal_BMI_IndexUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -540,6 +698,7 @@
 		};
 		B616F96723A1B7AB0004D41B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ADDE8A606ACAD5FE36576D1 /* Pods-Personal_BMI_Index-Personal_BMI_IndexUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
