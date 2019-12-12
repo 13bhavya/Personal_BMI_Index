@@ -8,8 +8,17 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController{
 
+    @IBOutlet weak var namefield: UITextField!
+    
+    @IBOutlet weak var agefield: UITextField!
+    @IBOutlet weak var genderfield: UITextField!
+    
+    @IBOutlet weak var weightfield: UITextField!
+    
+    @IBOutlet weak var heightfield: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
