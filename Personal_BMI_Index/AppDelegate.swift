@@ -1,10 +1,11 @@
 //
 //  AppDelegate.swift
-//  Personal_BMI_Index
-//
-//  Created by Bhavya Shah on 2019-12-11.
+//  File name: Personal_BMI_Index
+//  Author name: Bhavya shah
+//  Student Id : 301076681
+//  Created by Bhavya Shah on date : 2019-12-11.
 //  Copyright © 2019 Bhavya Shah. All rights reserved.
-//
+
 
 import UIKit
 import CoreData
@@ -22,9 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
-
+    
     // MARK: UISceneSession Lifecycle
-
+    
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
         // Use this method to select a configuration to create the new scene with.

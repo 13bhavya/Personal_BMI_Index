@@ -1,10 +1,11 @@
 //
 //  FirstViewController.swift
-//  Personal_BMI_Index
-//
-//  Created by Bhavya Shah on 2019-12-11.
+//  File name: Personal_BMI_Index
+//  Author name: Bhavya shah
+//  Student Id : 301076681
+//  Created by Bhavya Shah on date : 2019-12-11.
 //  Copyright © 2019 Bhavya Shah. All rights reserved.
-//
+
 
 import UIKit
 import Firebase
@@ -26,7 +27,66 @@ class FirstViewController: UIViewController {
     
     @IBOutlet weak var heightfield: UITextField!
   
-    @IBOutlet weak var resultBmi: UITextField!
+    @IBOutlet weak var resultBmi: UILabel!
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        //If return is pressed on the height field, proceed to the weight field
+        if(textField === heightField) {
+            textField.resignFirstResponder()
+            weightField.becomeFirstResponder()
+        }
+            //If return is pressed on the weight field, calculate.
+        else if(textField === weightField) {
+            if let height = heightField.text, let weight = weightField.text {
+                if !(height.isEmpty), !(weight.isEmpty) {
+                    calculateButton(nil)
+                }
+            }
+            textField.resignFirstResponder()
+        }
+        else { textField.resignFirstResponder() }
+        return true
+    }
+    
+    @IBAction func toggleAction(_ sender: UISwitch) {
+        if toggleunit.isOn {
+            //If text is already there, convert it to metric
+            if heightfield.text != nil && !((heightfield.text!).isEmpty) {
+                if let heightVal = Double(heightField.text!) {
+                    heighfield.text = String(format: "%.2f", heightVal * 0.0254)
+                }
+            }
+            if weightfield.text != nil && !((weightfield.text!).isEmpty) {
+                if let weightVal = Double(weightfield.text!) {
+                    weightfield.text = String(format: "%.2f", weightVal * 0.453592)
+                }
+            }
+           
+            else if lastCalculationType == 0 && heightfield.text != nil && !((heightfield.text!).isEmpty) && weightfield.text != nil && !((weightfield.text!).isEmpty) {
+                calculate(nil)
+            }
+            heightfield.placeholder = "(m)"
+            weightfield.placeholder = "(kg)"
+        }
+        else {
+            //If text is already there, convert it to imperial
+            if heightfield.text != nil && !((heightfield.text!).isEmpty) {
+                if let heightVal = Double(heightfield.text!) {
+                    heightField.text = String(format: "%.2f", heightVal / 0.0254)
+                }
+            }
+            if weightfield.text != nil && !((weightfield.text!).isEmpty) {
+                if let weightVal = Double(weightfield.text!) {
+                    weightfield.text = String(format: "%.2f", weightVal / 0.453592)
+                }
+            }
+            else if lastCalculationType == 0 && heightfield.text != nil && !((heightfield.text!).isEmpty) && weightfield.text != nil && !((weighfield.text!).isEmpty) {
+                calculate(nil)
+            }
+            heightfield.placeholder = "(in)"
+            weightfield.placeholder = "(lbs)"
+        }
+    }
     
     @IBAction func submit(_ sender: UIButton) {
         if (namefield.text != "")
