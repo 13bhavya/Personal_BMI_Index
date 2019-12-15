@@ -33,10 +33,9 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         avatar = avatarlist [indexPath.row]
         cell.showName.text = avatar.name
-        cell.showWeight.text = avatar.weight as? String
-        print(avatar.weight as? String)
-        cell.showHeight.text = avatar.height as? String
-        cell.showBmi.text = avatar.bmi as? String
+        cell.showWeight.text = avatar.weight
+        cell.showHeight.text = avatar.height
+        cell.showBmi.text = avatar.bmi
         return cell
     }
 
@@ -68,7 +67,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.avatarlist = [Avatar]()
         ref.observeSingleEvent(of: .value) { (snapshots) in
                    for case let snapshot as DataSnapshot in snapshots.children{
-                    let id = snapshot.key as? String
+                    let id = snapshot.key
                        let value = snapshot.value as? NSDictionary
                     let name = value?["name"] as? String
                        let weigh = value?["weight"] as? String
