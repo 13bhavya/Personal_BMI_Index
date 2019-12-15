@@ -16,7 +16,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     //var myIndex = 0
     var avatarlist = [Avatar]()
 
-    var weight = ""
+    //var weight = ""
     var height = ""
     var bmindex = ""
     
@@ -27,30 +27,35 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewControllerTableViewCell
+         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCellController
         
         let avatar: Avatar
         
         avatar = avatarlist [indexPath.row]
-        //cell.showTask.text = avatar.weight
+        cell.showName.text = avatar.name
+        cell.showWeight.text = avatar.weight as? String
+        print(avatar.weight as? String)
+        cell.showHeight.text = avatar.height as? String
+        cell.showBmi.text = avatar.bmi as? String
         return cell
     }
 
     
     @IBOutlet weak var myTableView: UITableView!
 
-//    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-//        if editingStyle == UITableViewCell.EditingStyle.delete {
-//            let currentIndex:String = avatarlist[indexPath.row].id ?? ""
-//            print(currentIndex)
-//            ref.child(currentIndex).removeValue()
-//            avatarlist.remove(at: indexPath.row)
-//            myTableView.deleteRows(at: [indexPath], with: .fade)
-//        }
-//    }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCell.EditingStyle.delete {
+            let currentIndex:String = avatarlist[indexPath.row].id ?? ""
+            print(currentIndex)
+            ref.child(currentIndex).removeValue()
+            avatarlist.remove(at: indexPath.row)
+            myTableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        ref = Database.database().reference().child("Avatar")
         // Do any additional setup after loading the view.
 
     }
@@ -63,12 +68,12 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.avatarlist = [Avatar]()
         ref.observeSingleEvent(of: .value) { (snapshots) in
                    for case let snapshot as DataSnapshot in snapshots.children{
-                    let id = snapshot.key as? Int
+                    let id = snapshot.key as? String
                        let value = snapshot.value as? NSDictionary
-                    let name = value?["name"] as? String ?? ""
-                       let weigh = value?["weigh"] as? Float
-                       let heigh = value?["heigh"] as? Float
-                    let bmiIndex = value?["bmi"] as? Float
+                    let name = value?["name"] as? String
+                       let weigh = value?["weight"] as? String
+                       let heigh = value?["height"] as? String
+                    let bmiIndex = value?["bmi"] as? String
                     let avatarObj = Avatar(id: id, name: name, weight: weigh, height: heigh, bmi: bmiIndex)
                        self.avatarlist.append(avatarObj)
                        self.myTableView.reloadData()

@@ -9,13 +9,13 @@
 
 
 class Avatar{
-    var id: Int?
+    var id: String?
     var name: String?
-    var weight: Float?
-    var height: Float?
-    var bmi: Float?
+    var weight: String?
+    var height: String?
+    var bmi: String?
     
-    init(id: Int?,name: String?,weight: Float?, height:Float?, bmi:Float?) {
+    init(id: String?,name: String?,weight: String?, height:String?, bmi:String?) {
         self.id = id;
         self.name = name;
         self.weight = weight;

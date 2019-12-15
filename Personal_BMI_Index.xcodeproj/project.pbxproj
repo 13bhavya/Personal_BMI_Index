@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		15C2F5C78C9CA24AC3B06D2E /* Pods_Personal_BMI_Index_Personal_BMI_IndexUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CB46FE9B59E2399CF3FCD5 /* Pods_Personal_BMI_Index_Personal_BMI_IndexUITests.framework */; };
+		26213FF523A5B83A005CED64 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26213FF423A5B83A005CED64 /* GoogleService-Info.plist */; };
+		26213FF723A5BB7A005CED64 /* TableViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26213FF623A5BB7A005CED64 /* TableViewCellController.swift */; };
 		AEEFA47B191ACBC6434DF995 /* Pods_Personal_BMI_Index.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C7AFE20D0C010979EE206A /* Pods_Personal_BMI_Index.framework */; };
 		B616F93423A1B7AA0004D41B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B616F93323A1B7AA0004D41B /* AppDelegate.swift */; };
 		B616F93623A1B7AA0004D41B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B616F93523A1B7AA0004D41B /* SceneDelegate.swift */; };
@@ -19,8 +21,6 @@
 		B616F94523A1B7AB0004D41B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B616F94323A1B7AB0004D41B /* LaunchScreen.storyboard */; };
 		B616F95023A1B7AB0004D41B /* Personal_BMI_IndexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B616F94F23A1B7AB0004D41B /* Personal_BMI_IndexTests.swift */; };
 		B616F95B23A1B7AB0004D41B /* Personal_BMI_IndexUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B616F95A23A1B7AB0004D41B /* Personal_BMI_IndexUITests.swift */; };
-		B616F96923A1BEEF0004D41B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B616F96823A1BEEF0004D41B /* GoogleService-Info.plist */; };
-		B616F96B23A1DA6B0004D41B /* TableViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B616F96A23A1DA6B0004D41B /* TableViewControllerTableViewCell.swift */; };
 		B616F96D23A1E4060004D41B /* AvatarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B616F96C23A1E4060004D41B /* AvatarModel.swift */; };
 		D7E9723B3797D16B1C828352 /* Pods_Personal_BMI_IndexTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F7A146FA4D799E1B489DBDF /* Pods_Personal_BMI_IndexTests.framework */; };
 /* End PBXBuildFile section */
@@ -44,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		0A4BF79D265740916D972C51 /* Pods-Personal_BMI_Index-Personal_BMI_IndexUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Personal_BMI_Index-Personal_BMI_IndexUITests.debug.xcconfig"; path = "Target Support Files/Pods-Personal_BMI_Index-Personal_BMI_IndexUITests/Pods-Personal_BMI_Index-Personal_BMI_IndexUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		26213FF423A5B83A005CED64 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		26213FF623A5BB7A005CED64 /* TableViewCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellController.swift; sourceTree = "<group>"; };
 		35CB46FE9B59E2399CF3FCD5 /* Pods_Personal_BMI_Index_Personal_BMI_IndexUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Personal_BMI_Index_Personal_BMI_IndexUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		397CB25396B66454590DD705 /* Pods-Personal_BMI_Index.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Personal_BMI_Index.debug.xcconfig"; path = "Target Support Files/Pods-Personal_BMI_Index/Pods-Personal_BMI_Index.debug.xcconfig"; sourceTree = "<group>"; };
 		7ADDE8A606ACAD5FE36576D1 /* Pods-Personal_BMI_Index-Personal_BMI_IndexUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Personal_BMI_Index-Personal_BMI_IndexUITests.release.xcconfig"; path = "Target Support Files/Pods-Personal_BMI_Index-Personal_BMI_IndexUITests/Pods-Personal_BMI_Index-Personal_BMI_IndexUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -65,8 +67,6 @@
 		B616F95623A1B7AB0004D41B /* Personal_BMI_IndexUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Personal_BMI_IndexUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B616F95A23A1B7AB0004D41B /* Personal_BMI_IndexUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personal_BMI_IndexUITests.swift; sourceTree = "<group>"; };
 		B616F95C23A1B7AB0004D41B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B616F96823A1BEEF0004D41B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		B616F96A23A1DA6B0004D41B /* TableViewControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerTableViewCell.swift; sourceTree = "<group>"; };
 		B616F96C23A1E4060004D41B /* AvatarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarModel.swift; sourceTree = "<group>"; };
 		F1042ADA68639DBDCC1D4EAD /* Pods-Personal_BMI_IndexTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Personal_BMI_IndexTests.debug.xcconfig"; path = "Target Support Files/Pods-Personal_BMI_IndexTests/Pods-Personal_BMI_IndexTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F28B982B313CFEFFF53A3CE5 /* Pods-Personal_BMI_IndexTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Personal_BMI_IndexTests.release.xcconfig"; path = "Target Support Files/Pods-Personal_BMI_IndexTests/Pods-Personal_BMI_IndexTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +139,7 @@
 		B616F93223A1B7AA0004D41B /* Personal_BMI_Index */ = {
 			isa = PBXGroup;
 			children = (
+				26213FF423A5B83A005CED64 /* GoogleService-Info.plist */,
 				B616F93323A1B7AA0004D41B /* AppDelegate.swift */,
 				B616F93523A1B7AA0004D41B /* SceneDelegate.swift */,
 				B616F93723A1B7AA0004D41B /* FirstViewController.swift */,
@@ -147,10 +148,9 @@
 				B616F94123A1B7AB0004D41B /* Assets.xcassets */,
 				B616F94323A1B7AB0004D41B /* LaunchScreen.storyboard */,
 				B616F94623A1B7AB0004D41B /* Info.plist */,
-				B616F96823A1BEEF0004D41B /* GoogleService-Info.plist */,
 				B616F93E23A1B7AA0004D41B /* Personal_BMI_Index.xcdatamodeld */,
-				B616F96A23A1DA6B0004D41B /* TableViewControllerTableViewCell.swift */,
 				B616F96C23A1E4060004D41B /* AvatarModel.swift */,
+				26213FF623A5BB7A005CED64 /* TableViewCellController.swift */,
 			);
 			path = Personal_BMI_Index;
 			sourceTree = "<group>";
@@ -294,8 +294,8 @@
 			files = (
 				B616F94523A1B7AB0004D41B /* LaunchScreen.storyboard in Resources */,
 				B616F94223A1B7AB0004D41B /* Assets.xcassets in Resources */,
+				26213FF523A5B83A005CED64 /* GoogleService-Info.plist in Resources */,
 				B616F93D23A1B7AA0004D41B /* Main.storyboard in Resources */,
-				B616F96923A1BEEF0004D41B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,9 +427,9 @@
 				B616F93A23A1B7AA0004D41B /* SecondViewController.swift in Sources */,
 				B616F93823A1B7AA0004D41B /* FirstViewController.swift in Sources */,
 				B616F96D23A1E4060004D41B /* AvatarModel.swift in Sources */,
-				B616F96B23A1DA6B0004D41B /* TableViewControllerTableViewCell.swift in Sources */,
 				B616F93423A1B7AA0004D41B /* AppDelegate.swift in Sources */,
 				B616F93623A1B7AA0004D41B /* SceneDelegate.swift in Sources */,
+				26213FF723A5BB7A005CED64 /* TableViewCellController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,6 +606,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SMR4ZB6P7H;
 				INFOPLIST_FILE = Personal_BMI_Index/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -625,6 +626,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SMR4ZB6P7H;
 				INFOPLIST_FILE = Personal_BMI_Index/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

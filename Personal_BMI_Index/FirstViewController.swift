@@ -29,17 +29,19 @@ class FirstViewController: UIViewController {
   
     @IBOutlet weak var resultBmi: UILabel!
     
+    @IBOutlet weak var descriptlabel: UILabel!
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         //If return is pressed on the height field, proceed to the weight field
-        if(textField === heightField) {
+        if(textField === heightfield) {
             textField.resignFirstResponder()
-            weightField.becomeFirstResponder()
+            weightfield.becomeFirstResponder()
         }
             //If return is pressed on the weight field, calculate.
-        else if(textField === weightField) {
-            if let height = heightField.text, let weight = weightField.text {
+        else if(textField === weightfield) {
+            if let height = heightfield.text, let weight = weightfield.text {
                 if !(height.isEmpty), !(weight.isEmpty) {
-                    calculateButton(nil)
+                    calculate(nil)
                 }
             }
             textField.resignFirstResponder()
@@ -52,8 +54,8 @@ class FirstViewController: UIViewController {
         if toggleunit.isOn {
             //If text is already there, convert it to metric
             if heightfield.text != nil && !((heightfield.text!).isEmpty) {
-                if let heightVal = Double(heightField.text!) {
-                    heighfield.text = String(format: "%.2f", heightVal * 0.0254)
+                if let heightVal = Double(heightfield.text!) {
+                    heightfield.text = String(format: "%.2f", heightVal * 0.0254)
                 }
             }
             if weightfield.text != nil && !((weightfield.text!).isEmpty) {
@@ -72,7 +74,7 @@ class FirstViewController: UIViewController {
             //If text is already there, convert it to imperial
             if heightfield.text != nil && !((heightfield.text!).isEmpty) {
                 if let heightVal = Double(heightfield.text!) {
-                    heightField.text = String(format: "%.2f", heightVal / 0.0254)
+                    heightfield.text = String(format: "%.2f", heightVal / 0.0254)
                 }
             }
             if weightfield.text != nil && !((weightfield.text!).isEmpty) {
@@ -80,7 +82,7 @@ class FirstViewController: UIViewController {
                     weightfield.text = String(format: "%.2f", weightVal / 0.453592)
                 }
             }
-            else if lastCalculationType == 0 && heightfield.text != nil && !((heightfield.text!).isEmpty) && weightfield.text != nil && !((weighfield.text!).isEmpty) {
+            else if lastCalculationType == 0 && heightfield.text != nil && !((heightfield.text!).isEmpty) && weightfield.text != nil && !((weightfield.text!).isEmpty) {
                 calculate(nil)
             }
             heightfield.placeholder = "(in)"
@@ -88,7 +90,7 @@ class FirstViewController: UIViewController {
         }
     }
     
-    @IBAction func submit(_ sender: UIButton) {
+    @IBAction func submit(_ sender: UIButton?) {
         if (namefield.text != "")
             && (agefield.text != "")
             && (genderfield.text != "")
@@ -118,11 +120,12 @@ class FirstViewController: UIViewController {
                       "age": agefield.text! as String,
                       "gender": genderfield.text! as String,
                       "weight": weightfield.text! as String,
-                      "height": heightfield.text! as String,]
+                      "height": heightfield.text! as String,
+                      "bmi": resultBmi.text! as String]
         ref.child(key!).setValue(avatar)
     }
 
-    @IBAction func calculate(_ sender: UIButton) {
+    @IBAction func calculate(_ sender: UIButton?) {
         if weightfield.text != nil && heightfield.text != nil, var weight = Double(weightfield.text!), var height = Double(heightfield.text!) {
                 self.view.endEditing(true)
                 //Calculating BMI using metric, so convert to metric first
@@ -142,7 +145,7 @@ class FirstViewController: UIViewController {
                     else if(BMI < 34.99) { descriptor = "Moderately Obese" }
                     else if(BMI < 39.99) { descriptor = "Severely Obese" }
                     else { descriptor = "Very Severely Obese" }
-                    //resultText += descriptor!
+            descriptlabel.text = descriptor
                     print(resultText)
                     resultBmi.text = resultText
                     resultBmi.isHidden = false
