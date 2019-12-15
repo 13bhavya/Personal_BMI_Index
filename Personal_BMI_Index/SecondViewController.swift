@@ -12,6 +12,12 @@ import Firebase
 
 class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
+    @IBAction func addField(_ sender: UIButton) {
+        
+        
+    }
+    
+    
     var ref: DatabaseReference!
     //var myIndex = 0
     var avatarlist = [Avatar]()
